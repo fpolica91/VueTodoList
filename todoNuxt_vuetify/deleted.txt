@@ -1,0 +1,159 @@
+   <!-- <v-card>
+        <v-card-title class="headline">
+          Welcome to the Vuetify + Nuxt.js template
+        </v-card-title>
+        <v-card-text>
+          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
+          <p>
+            For more information on Vuetify, check out the <a
+              href="https://vuetifyjs.com"
+              target="_blank"
+            >
+              documentation
+            </a>.
+          </p>
+          <p>
+            If you have questions, please join the official <a
+              href="https://chat.vuetifyjs.com/"
+              target="_blank"
+              title="chat"
+            >
+              discord
+            </a>.
+          </p>
+          <p>
+            Find a bug? Report it on the github <a
+              href="https://github.com/vuetifyjs/vuetify/issues"
+              target="_blank"
+              title="contribute"
+            >
+              issue board
+            </a>.
+          </p>
+          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
+          <div class="text-xs-right">
+            <em><small>&mdash; John Leider</small></em>
+          </div>
+          <hr class="my-3">
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+          >
+            Nuxt Documentation
+          </a>
+          <br>
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+          >
+            Nuxt GitHub
+          </a>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer />
+          <v-btn
+            color="primary"
+            nuxt
+            to="/inspire"
+          >
+            Continue
+          </v-btn>
+        </v-card-actions>
+      </v-card>-->
+
+
+
+       // async created() {
+  // const ref = await fireDb.collection("tasks").get();
+  // const querySnapshot = await fireDb.collection("tasks");
+  // querySnapshot.onSnapshot(doc => {
+  //   this.data = [];
+  //   doc.forEach(item =>
+  //     this.data.push({
+  //       title: item.data().title,
+  //       completed: false
+  //     })
+  //   );
+  // });
+  // await fireDb.collection("tasks").onSnapshot(function(querySnapshot) {
+  //   querySnapshot.forEach(doc => {
+  //     const list = [];
+  //     list.push({
+  //       title: doc.data().title,
+  //       completed: doc.data().completed
+  //     });
+  //   });
+  // });
+  // fireDb
+  //   .collection("tasks")
+  //   .doc("tasks")
+  //   .onSnapshot(function(doc) {
+  //     let source = doc.metadata.hasPendingWrites ? "Local" : "Server";
+  //     console.log(source, " ", doc.data());
+  //   });
+  // ref.forEach(item => {
+  //   this.data.push({
+  //     title: item.data().title,
+  //     completed: item.data().completed
+  //   });
+  // });
+  // }
+
+   
+
+
+   ORIGINALLY IN INITIALIZE
+
+    // fireDb
+    //   .collection("tasks")
+    //   .get()
+    //   .then(querySnapshot => {
+    //     let list = [];
+    //     querySnapshot.forEach(doc => {
+    //       const data = {
+    //         id: doc.id,
+    //         title: doc.data().title,
+    //         completed: doc.data().completed
+    //       };
+    //       list.push(data);
+    //     });
+    //   });
+
+    //   const tasks = await fireDb.collection("tasks").get();
+    //   tasks.forEach(item => {
+    //     const data = {
+    //       id: item.id,
+    //       title: item.data().title,
+    //       completed: item.data().completed
+    //     };
+    //     commit("setTasks", data);
+    //   });
+
+
+
+
+  // const tasks = await fireDb.collection("tasks");
+  // await fireDb.collection("tasks").onSnapshot(snapshot => {
+  //   const source = snapshot.metadata.hasPendingWrites ? "Local" : "Server";
+  //   snapshot.docChanges().forEach(change => {
+  //     if (change.type === "added") {
+  //       if (source === "Server") {
+  //         const { title, completed } = change.doc.data();
+  //         let task = {
+  //           id: change.doc.id,
+  //           title: title,
+  //           completed: completed
+  //         };
+  //         commit("addToPage", task);
+  //       }
+  //     }
+  //     if (change.type === "removed") {
+  //       if (source === "Server") {
+  //         console.log(change.doc.data());
+
+  //         commit("delete", change.doc.data());
+  //       }
+  //     }
+  //   });
+  // });
+  // }
